@@ -18,7 +18,17 @@ for i in arr:
     j += 1
 
 print()
+
 #Задача-2
+list2 = []
+list = [1, 2, 3, 4, 6, 7, 87, 8, 98]
+list1 = [234, 21, 34, 14, 1, 2, 8]
+c = (set(list) - set(list1))
+for i in c:
+    list2.append(i)
+print(list2)
+
+#Задача-3
 
 arr = [2, 5, 52, 23, 6, 23, 64, 2, 7, 23, 34, 5, 2]
 newArr = []
