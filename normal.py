@@ -52,7 +52,7 @@ import re
 # surname, name, email = surname or 'Пупкин', name or 'василий', email or 'te$T@test.net'
 #
 # for i in [surname, name]:
-#     if not re.match('[А-ЯA-Z]+[а-яa-z]+', i):
+#     if not re.match('^[А-ЯA-Z]{1}[а-яa-z]+', i):
 #         print(f'Неверно введено: {i}')
 #
 # if not re.match('[a-z_0-9]+@[a-z]+\.(ru|org|com)', email):
@@ -60,5 +60,5 @@ import re
 
 
 # Задача - 2:
-regexp = '\.{1,}\.'
+regexp = '\.{2,}'
 print(f'Было найдено(а) {len(re.findall(regexp, some_str))} строк(а)(и), где более одного раза подряд повторялась точка')
